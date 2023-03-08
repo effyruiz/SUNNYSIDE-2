@@ -85,16 +85,18 @@ body, html {
     padding: 2rem;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0;
 }
+
 .half-item-content-text h2 {
     font-family:'Fraunces';
     font-size: 2rem;
+    padding: 1rem;
 }
 
 .half-item-content-text h5 {
     font-family:'Fraunces';
     text-decoration: underline;
+    padding: 1rem;
    
 }
 
@@ -102,6 +104,7 @@ body, html {
     font-size: medium;
     font-family: 'Barlow';
     color: gray;
+    padding: 1rem;
 }
 
 .services-flex {
@@ -166,8 +169,7 @@ body, html {
     font-family: 'Fraunces', sans-serif;
     letter-spacing: 0.4rem;
     color: #a9a9a9;
-    padding-bottom: 2rem
-    ;
+    padding-bottom: 2rem;
 
 }
 
@@ -306,6 +308,9 @@ body, html {
     
     .half-item-content-text {
         width: 50%; 
+        padding: 3rem;
+
+       
     }
   
 
