@@ -66,16 +66,37 @@ html {
 }
 
 .header-ham-right {
-    position: absolute;
-    width: 100%;
-    background: black;
-    top: 4rem;
+	position: absolute;
+	width: 100%;
+	top: 4rem;
     left: 0;
-    padding: 1rem;
+    padding: 2rem;
     z-index: 9999;
     visibility: hidden;
     opacity: 0;
 }
+
+.background {
+	background-color: #fff;
+	color: #a9a9a9;
+	font-family: 'Barlow';
+    padding: 1rem;
+}
+
+.header-ham-right ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.header-ham-right ul li {
+	margin-bottom: 1rem;
+	margin-top: 1.2rem;
+	text-align: center;
+}
+
+
+
 
 .header-ham .ham:hover + .header-ham-right,
 .header-ham .ham:focus + .header-ham-right {
@@ -94,6 +115,12 @@ html {
 	font-size: x-small;
 	width: 85px;
 	height: 40px;
+}
+
+.header-ham-right button {
+	display: block;
+	background-color: rgb(255, 234, 41);
+	margin: auto;
 }
 
 .header h1 {
