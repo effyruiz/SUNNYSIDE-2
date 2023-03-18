@@ -70,10 +70,12 @@ html {
 	width: 100%;
 	top: 4rem;
     left: 0;
-    padding: 2rem;
+    padding: 1rem;
     z-index: 9999;
-    visibility: hidden;
-    opacity: 0;
+}
+
+.header-ham-right--desktop {
+	display: none;
 }
 
 .background {
@@ -81,6 +83,7 @@ html {
 	color: #a9a9a9;
 	font-family: 'Barlow';
     padding: 1rem;
+	position: relative;
 }
 
 .header-ham-right ul {
@@ -95,8 +98,20 @@ html {
 	text-align: center;
 }
 
-
-
+.header-ham-right .background:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 18px solid transparent;
+	border-bottom-color: #ffffff;
+	border-top: 0;
+	border-right: 0;
+	margin-left: 153.5px;
+	margin-top: -18px;
+}
 
 .header-ham .ham:hover + .header-ham-right,
 .header-ham .ham:focus + .header-ham-right {
@@ -335,7 +350,7 @@ html {
     }
 
     .header-ham-right {
-        display: flex;
+        display: none;
         position: relative;
         width: auto;
         background: transparent;
@@ -343,9 +358,11 @@ html {
         left: unset;
         padding: 0;
         z-index: 0;
-        visibility: visible;
-        opacity: 1;
     }
+
+	.header-ham-right--desktop {
+		display: flex;
+	}
 
     .header-ham .menu {
         list-style: none;
